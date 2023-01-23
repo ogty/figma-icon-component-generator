@@ -1,7 +1,7 @@
 import { prompt } from 'enquirer';
 import { setProps } from './libs/setProps';
 import { getIconSvg } from './libs/getIconSvg';
-import figmaUiIconNames from './data/css-gg.json';
+import cssGgIconNames from './data/css-gg.json';
 import { writeFileSync } from 'fs';
 import bootstrapIconNames from './data/bootstrap.json';
 import untitledUiIconNames from './data/untitled-ui.json';
@@ -26,8 +26,8 @@ import type { Developer, ComponentType } from './types';
     name: 'iconName',
     message: 'Select icon',
     choices:
-      developer === 'figma-ui'
-        ? figmaUiIconNames
+      developer === 'css-gg'
+        ? cssGgIconNames
         : developer === 'bootstrap'
         ? bootstrapIconNames
         : untitledUiIconNames,

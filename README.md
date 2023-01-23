@@ -25,7 +25,7 @@ Copy the asterisked portion (fileId)
 ```zsh
 ...
 export FIGMA_TOKEN='**********************'
-export FIGMA_UI_FILE_ID='**********************'
+export CSS_GG_FILE_ID='**********************'
 export BOOTSTRAP_FILE_ID='**********************'
 export CSS_GG_FILE_ID='**********************'
 ```
