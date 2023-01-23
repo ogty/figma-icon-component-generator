@@ -1,4 +1,4 @@
-<h1 align="center">📷 Figma Icon Component Generator</h1>
+<h1 align="center">🎨 Figma Icon Component Generator</h1>
 
 ## ✏️ Procedure
 
@@ -18,13 +18,18 @@ https://www.figma.com/file/**********************/
 
 Copy the asterisked portion (fileId)
 
-### 3.
+### 3. Set Environment Variables
 
 ```zsh
 $ export FIGMA_TOKEN='**********************'
 $ export FIGMA_UI_FILE_ID='**********************'
 $ export BOOTSTRAP_FILE_ID='**********************'
 $ export CSS_GG_FILE_ID='**********************'
+```
+
+## Usage
+
+```zsh
 $ npm install --global figma-icon-component-generator
 $ icon
 ```

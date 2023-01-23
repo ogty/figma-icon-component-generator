@@ -51,22 +51,25 @@ import type { Developer, ComponentType } from './types';
   });
   const { outputDirectoryPath } = outputDirectoryPathPrompt;
 
-  // props
-  const sizePrompt: any = await prompt({
-    type: 'toggle',
-    name: 'size',
-    message: 'Size prop',
-  });
-  const colorPrompt: any = await prompt({
-    type: 'toggle',
-    name: 'color',
-    message: 'Color prop',
-  });
-  const { size } = sizePrompt;
-  const { color } = colorPrompt;
-
   let svgText = await getIconSvg(iconName, developer);
-  svgText = setProps(componentType, svgText, size, color);
+
+  // props
+  if (componentType !== 'svg') {
+    const sizePrompt: any = await prompt({
+      type: 'toggle',
+      name: 'size',
+      message: 'Size prop',
+    });
+    const colorPrompt: any = await prompt({
+      type: 'toggle',
+      name: 'color',
+      message: 'Color prop',
+    });
+    const { size } = sizePrompt;
+    const { color } = colorPrompt;
+
+    svgText = setProps(componentType, svgText, size, color);
+  }
 
   const upperCamelCaseIconName = iconName
     .split('-')
