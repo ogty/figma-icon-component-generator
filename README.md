@@ -20,11 +20,14 @@ Copy the asterisked portion (fileId)
 
 ### 3. Set Environment Variables
 
+**`.zshrc`**
+
 ```zsh
-$ export FIGMA_TOKEN='**********************'
-$ export FIGMA_UI_FILE_ID='**********************'
-$ export BOOTSTRAP_FILE_ID='**********************'
-$ export CSS_GG_FILE_ID='**********************'
+...
+export FIGMA_TOKEN='**********************'
+export FIGMA_UI_FILE_ID='**********************'
+export BOOTSTRAP_FILE_ID='**********************'
+export CSS_GG_FILE_ID='**********************'
 ```
 
 ## Usage
